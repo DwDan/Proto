@@ -3,12 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{E8F56779-BDAB-48C9-B2EC-8B52674682CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{E584ED8F-7536-4A44-986E-260EC0BF272B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Core.Presentation", "template\back-end\services\core\Proto.Core.Presentation\Proto.Core.Presentation.csproj", "{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Core.Domain", "template\back-end\services\core\Proto.Core.Domain\Proto.Core.Domain.csproj", "{5D5228EF-03F4-4B1B-9329-3374BB2251CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Core.Infrastructure", "template\back-end\services\core\Proto.Core.Infrastructure\Proto.Core.Infrastructure.csproj", "{0E135C6E-C1EB-449D-8266-42C20CDAA042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Core.Application", "template\back-end\services\core\Proto.Core.Application\Proto.Core.Application.csproj", "{6F3E7C46-2718-45AF-BF8B-91A649251D2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D5228EF-03F4-4B1B-9329-3374BB2251CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D5228EF-03F4-4B1B-9329-3374BB2251CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D5228EF-03F4-4B1B-9329-3374BB2251CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D5228EF-03F4-4B1B-9329-3374BB2251CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E135C6E-C1EB-449D-8266-42C20CDAA042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E135C6E-C1EB-449D-8266-42C20CDAA042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E135C6E-C1EB-449D-8266-42C20CDAA042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E135C6E-C1EB-449D-8266-42C20CDAA042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3E7C46-2718-45AF-BF8B-91A649251D2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3E7C46-2718-45AF-BF8B-91A649251D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3E7C46-2718-45AF-BF8B-91A649251D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3E7C46-2718-45AF-BF8B-91A649251D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E584ED8F-7536-4A44-986E-260EC0BF272B} = {E8F56779-BDAB-48C9-B2EC-8B52674682CC}
+		{DA51B04D-F76B-4812-BE7E-9C93DBB2BDD3} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
+		{5D5228EF-03F4-4B1B-9329-3374BB2251CD} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
+		{0E135C6E-C1EB-449D-8266-42C20CDAA042} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
+		{6F3E7C46-2718-45AF-BF8B-91A649251D2A} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
 	EndGlobalSection
 EndGlobal
