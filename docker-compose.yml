@@ -1,0 +1,39 @@
+services:
+  proto.core.presentation:
+    container_name: proto_core_presentation
+    image: ${DOCKER_REGISTRY-}protocorepresentation
+    build:
+      context: ./template/back-end/services/core
+      dockerfile: Proto.Core.Presentation/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+      - ASPNETCORE_HTTPS_PORTS=8081
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+
+  proto.core.database:
+    container_name: proto_core_database
+    image: postgres:13
+
+    environment:
+      POSTGRES_DB: DBSCore
+      POSTGRES_USER: db@user
+      POSTGRES_PASSWORD: db@password
+    ports:
+      - "5432"
+    restart: unless-stopped
+
+  proto.frontend:
+    container_name: proto_frontend
+    build:
+      context: ./template/front-end
+      dockerfile: src/Dockerfile
+    ports:
+      - "4200:80"
+    depends_on:
+      - proto.core.presentation
