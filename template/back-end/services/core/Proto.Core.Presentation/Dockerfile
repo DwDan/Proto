@@ -8,13 +8,13 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 COPY ["Proto.Core.Presentation/Proto.Core.Presentation.csproj", "Proto.Core.Presentation/"]
-COPY ["Demo.Common.Presentation/Demo.Common.Presentation.csproj", "Demo.Common.Presentation/"]
-COPY ["Demo.Common.Application/Demo.Common.Application.csproj", "Demo.Common.Application/"]
+COPY ["Proto.Common.Presentation/Proto.Common.Presentation.csproj", "Proto.Common.Presentation/"]
+COPY ["Proto.Common.Application/Proto.Common.Application.csproj", "Proto.Common.Application/"]
 COPY ["Proto.Core.Application/Proto.Core.Application.csproj", "Proto.Core.Application/"]
 COPY ["Proto.Core.Domain/Proto.Core.Domain.csproj", "Proto.Core.Domain/"]
-COPY ["Demo.Common.Domain/Demo.Common.Domain.csproj", "Demo.Common.Domain/"]
+COPY ["Proto.Common.Domain/Proto.Common.Domain.csproj", "Proto.Common.Domain/"]
 COPY ["Proto.Core.Infrastructure/Proto.Core.Infrastructure.csproj", "Proto.Core.Infrastructure/"]
-COPY ["Demo.Common.Infrastructure/Demo.Common.Infrastructure.csproj", "Demo.Common.Infrastructure/"]
+COPY ["Proto.Common.Infrastructure/Proto.Common.Infrastructure.csproj", "Proto.Common.Infrastructure/"]
 COPY ["Proto.Core.IoC/Proto.Core.IoC.csproj", "Proto.Core.IoC/"]
 
 RUN dotnet restore "./Proto.Core.Presentation/Proto.Core.Presentation.csproj"

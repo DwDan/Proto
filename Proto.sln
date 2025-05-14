@@ -19,6 +19,16 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Core.IoC", "template\back-end\services\core\Proto.Core.IoC\Proto.Core.IoC.csproj", "{6B63A137-CF50-412A-94EF-9318CDCA058C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Common.Presentation", "template\back-end\common\Proto.Common.Presentation\Proto.Common.Presentation.csproj", "{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Common.Domain", "template\back-end\common\Proto.Common.Domain\Proto.Common.Domain.csproj", "{5225B507-1CB8-46B1-8E83-291C2555A49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Common.Infrastructure", "template\back-end\common\Proto.Common.Infrastructure\Proto.Common.Infrastructure.csproj", "{9C397F69-7F8E-464A-9B8C-28B640B4150E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proto.Common.Application", "template\back-end\common\Proto.Common.Application\Proto.Common.Application.csproj", "{343D4AD1-C136-4B9A-9FA2-C787C032763D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +59,22 @@ Global
 		{6B63A137-CF50-412A-94EF-9318CDCA058C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B63A137-CF50-412A-94EF-9318CDCA058C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B63A137-CF50-412A-94EF-9318CDCA058C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5225B507-1CB8-46B1-8E83-291C2555A49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5225B507-1CB8-46B1-8E83-291C2555A49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5225B507-1CB8-46B1-8E83-291C2555A49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5225B507-1CB8-46B1-8E83-291C2555A49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C397F69-7F8E-464A-9B8C-28B640B4150E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C397F69-7F8E-464A-9B8C-28B640B4150E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C397F69-7F8E-464A-9B8C-28B640B4150E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C397F69-7F8E-464A-9B8C-28B640B4150E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343D4AD1-C136-4B9A-9FA2-C787C032763D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343D4AD1-C136-4B9A-9FA2-C787C032763D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343D4AD1-C136-4B9A-9FA2-C787C032763D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343D4AD1-C136-4B9A-9FA2-C787C032763D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,5 +86,10 @@ Global
 		{0E135C6E-C1EB-449D-8266-42C20CDAA042} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
 		{6F3E7C46-2718-45AF-BF8B-91A649251D2A} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
 		{6B63A137-CF50-412A-94EF-9318CDCA058C} = {E584ED8F-7536-4A44-986E-260EC0BF272B}
+		{FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52} = {E8F56779-BDAB-48C9-B2EC-8B52674682CC}
+		{F69DA94A-EDA3-4BE8-8A03-5049EB6A2F80} = {FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52}
+		{5225B507-1CB8-46B1-8E83-291C2555A49E} = {FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52}
+		{9C397F69-7F8E-464A-9B8C-28B640B4150E} = {FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52}
+		{343D4AD1-C136-4B9A-9FA2-C787C032763D} = {FCB0C765-C5B1-4B36-AA48-A4DEA4B7AD52}
 	EndGlobalSection
 EndGlobal
