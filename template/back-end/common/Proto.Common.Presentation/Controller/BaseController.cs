@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Proto.Common.WebApi.Common;
+namespace Proto.Common.Presentation;
 
 [Route("api/[controller]")]
 [ApiController]

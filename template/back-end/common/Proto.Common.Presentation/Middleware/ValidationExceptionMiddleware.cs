@@ -4,7 +4,7 @@ using Proto.Common.Application.Validation;
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 
-namespace Proto.Common.WebApi;
+namespace Proto.Common.Presentation;
 
 public class ValidationExceptionMiddleware
 {

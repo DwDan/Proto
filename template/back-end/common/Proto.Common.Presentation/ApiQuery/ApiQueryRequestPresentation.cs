@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Proto.Common.WebApi;
+namespace Proto.Common.Presentation;
 
 [ModelBinder(BinderType = typeof(ApiQueryRequestBinder))]
 public class ApiQueryRequestPresentation

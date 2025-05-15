@@ -1,4 +1,4 @@
-﻿namespace Proto.Common.WebApi;
+﻿namespace Proto.Common.Presentation;
 
 public class ApiQueryResponsePresentation<T>
 {

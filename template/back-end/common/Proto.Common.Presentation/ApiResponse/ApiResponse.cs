@@ -1,6 +1,6 @@
 ﻿using Proto.Common.Application.Validation;
 
-namespace Proto.Common.WebApi;
+namespace Proto.Common.Presentation;
 
 public class ApiResponse
 {
